@@ -1,6 +1,7 @@
 import { Button, Card, Field, Flex, Input, Stack } from "@chakra-ui/react";
 import { FC, useState } from "react";
 import { AppContextType } from "../../store/AppContextProvider";
+import { PasswordInput } from "../ui/password-input";
 
 type AuthFormProps = {
 	onSetDataForm: (data: Omit<AppContextType, "authorized">) => void;
@@ -52,7 +53,7 @@ const AuthForm: FC<AuthFormProps> = ({ onSetDataForm }) => {
 									<Field.Label>
 										Api Token Instance
 									</Field.Label>
-									<Input
+									<PasswordInput
 										value={apiTokenInstance}
 										onChange={apiTokenInstanceHandler}
 									/>
