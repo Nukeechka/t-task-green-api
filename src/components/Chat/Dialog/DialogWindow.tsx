@@ -1,5 +1,5 @@
 import { Avatar, Box, Button, Card, Flex, Input } from "@chakra-ui/react";
-import { FC, useContext, useEffect, useState } from "react";
+import { FC, useContext, useState } from "react";
 import { RiSendPlaneLine } from "react-icons/ri";
 import { ActiveChat } from "../Chat";
 import {
